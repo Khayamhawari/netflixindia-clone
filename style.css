@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+:root {
+   --primary-text-color: #000000;
+   --secondary-text-color: #fff;
+   --padding-inline: 20px;
+   --primary-font-family: 'Poppins', Arial;
+   --secondary-font-family: Helvetica;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 2.80rem;
+}
+
+h4 {
+    font-size: 1.50rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+/* utility class  */
+
+.container {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline);
+} 
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* header section */
+
+header {
+    background-image: url("assets/asset.banner.jpg");
+    height: 95vh;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+header .box {
+    height: 95vh;
+    width: 100%;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+/* nav bar section */
+
+.nav-sections {
+   max-width: 85vw;
+   justify-content: space-between;
+   align-items: center;
+   padding: 25px;
+   margin: auto;
+}
+
+.nav-buttons {
+    gap: 20px;
+    font-size: 1rem;
+    font-family: var(--primary-font-family);
+    margin-right: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.company-logo img{
+    margin-left: 40px;
+    color: red;
+    position: relative;
+    z-index: 1;
+}
+
+.drowpdown-list {
+    border: 1px solid rgba(128,128,128,0.7);
+    border-radius: 3px;
+    background-color: rgba(22,22,22,0.7);
+}
+
+.drowpdown-list img{
+    color: white;
+    filter: invert(1);
+    height: 18px;
+    margin-left: 3px;
+    margin-block: -2px;
+    margin-right: -9px;
+}
+
+.selector {
+    padding-inline: 1px;
+    margin-left: 3px;
+    padding-block: 4px;
+    font-size: 1rem;
+    font-family: var(--primary-font-family);
+    background: transparent;
+    color: var(--secondary-text-color);
+    border: none;
+}
+
+.selector option {
+    font-size: 1rem;
+    font-family: 'Poppins', Verdana;
+    background-color: var(--secondary-text-color);
+    color: var(--primary-text-color);
+
+}
+
+.primary-button {
+    padding-inline: 10px;
+    padding-block: 4px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: red;
+    color: var(--secondary-text-color);
+}
+
+.header-text {
+   font-family: var(--primary-font-family);
+   color: var(--secondary-text-color);
+   margin-top: 170px;
+   text-align: center;
+   position: relative;
+   z-index: 1;
+}
+
+.form-area {
+    margin-top: 20px;
+    position: relative;
+} 
+
+.form-area input{
+    padding-left: 23px;
+    padding-right: 107px;
+    padding-block: 17px;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: var(--secondary-text-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--primary-font-family);
+}
+
+.form-area ::placeholder {
+  color: #ccc;
+  opacity: 0.9;
+}
+
+/* .email-label {
+    position: absolute;
+    left: 28.7%;
+    color: #ccc;
+    transition: all 0.2s;
+} */
+
+/* .email-input:focus + .email-label {
+    top: 0.1rem;
+    font-size: 0.8rem;
+} */
+
+/* .email-input:not(:placeholder-shown).email-input:not(:focus) + .email-label {
+    top: 0.1rem;
+    font-size: 0.8rem;
+} */
+
+.upper-content p{
+    font-size: 1.50rem;
+}
+
+.lowwer-content {
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.header-button {
+    background-color: red; 
+    color: var(--secondary-text-color);
+    padding-inline: 40px;
+    padding-block: 15px;
+    margin-left: 15px;
+    font-size: 1.25rem;
+    font-family: var(--primary-font-family);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon-header {
+    margin-left: 12px;
+}
+
+/* section-1  */
+
+.border-box {
+    border-top: 8px solid #232323;
+}
+
+.first-section-area {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    gap: 30px;
+}
+
+.image-video {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-video img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.image-video video {
+    position: absolute;
+    top: 68px;
+    right: -25px;
+}
+
+.section-content-1 {
+    font-family: var(--primary-font-family);
+    max-width: 45vw;
+}
+
+.section-content-1 p{
+    font-size: 1.50rem;
+    margin-top: 10px;
+}
+
+/* section-2 */
+
+.content-section-2 {
+    margin-left: 62px;
+}
+
+.poster-container {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #4e4e4e;
+    background-color: var(--primary-text-color);
+    border-radius: 15px;
+    padding: 2px;
+    margin-top: 290px;
+    margin-left: -440px;
+    margin-right: 43px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.poster-small-image img {
+    height: 80px;
+    padding: 10px;
+}
+
+.poster-content {
+    width: 80%;
+}
+
+.poster-content h4{
+    font-size: 1rem;
+}
+
+.poster-content p{
+    font-size: 0.875rem;
+    color: #076bd6;
+    text-align: left;
+}
+
+.poster-gif img {
+    margin-left: 5px;
+}
+
+/* section-3 */
+
+.third-image-video {
+    position: relative;
+    overflow: hidden;
+}
+
+.third-image-video img{
+    /* position: relative; */
+    z-index: 1;
+    overflow: hidden;
+} 
+
+.third-image-video video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -61px;
+    right: 89px;
+    max-width: 63%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* section-4 */
+
+.content-4 {
+    flex-direction: column;
+}
+
+.content-4 p {
+     margin-left: 74px;
+}
+
+.content-4 h2 {
+    margin-right: 38px;
+}
+
+/* FAQs section */
+
+.qst-ans-section h2{
+    text-align: center;
+    font-family: var(--primary-font-family);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.accordian {
+   max-width: 1100px;
+   padding: 25px 16px;
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   line-height: 2rem;
+   background-color: #2d2d2d; 
+   color: white;
+   font-family: 'Poppins', Arial;
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
+.answer p {
+    margin-top: 30px;
+    color: var(--secondary-text-color);
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordian:hover {
+    background-color: #414141;
+}
+
+.icon {
+    margin-right: 20px;
+    font-size: 2.50rem;
+}
+
+.answer {
+    color: #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+    cursor: auto;
+}
+
+.answer.active{
+    max-height: 300px;
+}
+
+/* special-div for before footer */
+
+.lowwer-content-2 {
+    padding: 30px 16px;
+    margin-bottom: 40px;
+}
+
+.lowwer-content-2 p {
+    text-align: center;
+    font-family: var(--primary-font-family);
+}
+
+/* .email-label-2 {
+    font-family: var(--primary-font-family);
+    left: 28%;
+} */
+
+
+/* footer section */
+
+footer {
+    margin-top: 70px;
+    opacity: 0.7;
+}
+
+.footer-section {
+   font-family: var(--primary-font-family);
+   justify-content: space-between;
+   align-items: flex-start;
+   margin-top: 18px;
+}
+
+.footer-first-line {
+    font-family: var(--primary-font-family);
+    padding: 14px 145px;
+    margin-left: -8px;
+    font-size: 1.10rem;
+}
+
+
+.footer-first-line a {
+    font-size: 1.10rem;
+    color: var(--secondary-text-color);
+    text-decoration: underline;
+}
+
+.footer-items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    font-family: 'Poppins','Roboto';
+}
+
+.footer-items a {
+    text-decoration: underline;
+    color: var(--secondary-text-color);
+}
+
+/* sub-footer */
+
+.drowpdown-list-2 {
+    max-width: 7.2vw;
+    margin-top: 30px;
+    margin-left: 140px;
+    padding-inline: 3px;
+}
+
+.last-line {
+    font-family: var(--primary-font-family);
+    padding: 0 0 50px 0;
+    margin-left: 140px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
